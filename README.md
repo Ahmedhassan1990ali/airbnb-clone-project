@@ -9,6 +9,8 @@
 - **DevOps Engineer**: Handles deployment, monitoring, and scaling of the backend services.
 - **QA Engineer**: Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
+---
+---
 ## **⚙️ Technology Stack**
 - **Django**: A high-level Python web framework used for building the RESTful API.
 - **Django REST Framework**: Provides tools for creating and managing RESTful APIs.
@@ -19,6 +21,8 @@
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
 
+---
+---
 ## 🗄️ Database Design
 
 This section outlines the core entities and their relationships within the application.
@@ -98,8 +102,9 @@ Records of successful transactions.
 **Relationships**:
 - A payment belongs to one booking.
 
-
-## 🛠️ Features Breakdown
+---
+---
+## 🛠️ Feature Breakdown
 
 ### 1. API Documentation
 - **OpenAPI Standard**: The backend APIs are documented using the OpenAPI standard for clarity and ease of integration.
