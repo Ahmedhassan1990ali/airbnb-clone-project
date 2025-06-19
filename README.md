@@ -162,3 +162,49 @@ Records of successful transactions.
 ### 7. Performance & Optimization
 - **Indexing**: Frequently queried fields are indexed for faster database access.
 - **Caching**: Implemented caching strategies to reduce database load and improve response time.
+
+---
+---
+## 🔐 API Security
+
+Security is a top priority in this application to ensure user trust, data integrity, and safe financial transactions. The following measures are implemented to secure the API:
+
+### 1. Authentication
+- **Method**: Token-based authentication (e.g., JWT or DRF Token Authentication).
+- **Purpose**: Verifies the identity of users before granting access to protected endpoints.
+- **Why it matters**: Prevents unauthorized users from accessing or manipulating user accounts and sensitive operations like booking or payment.
+
+### 2. Authorization
+- **Role-Based Access Control (RBAC)**:
+  - Hosts can manage properties they own.
+  - Guests can book and review but not modify other users’ data.
+  - Admins have elevated access for moderation and oversight.
+- **Why it matters**: Ensures users can only perform actions they’re allowed to, minimizing risk of data leaks or privilege abuse.
+
+### 3. Rate Limiting
+- **Strategy**: Limit the number of API requests per user/IP over time.
+- **Why it matters**: Protects against brute-force attacks, denial-of-service (DoS), and abuse of public APIs.
+
+### 4. Data Encryption
+- **At Rest**: Sensitive fields like passwords are hashed and stored securely.
+- **In Transit**: HTTPS is enforced for all data transmission between client and server.
+- **Why it matters**: Prevents data theft during storage or network interception.
+
+### 5. Input Validation & Sanitization
+- **Method**: All user inputs are validated using serializers and sanitized where needed.
+- **Why it matters**: Protects against injection attacks (SQL, XSS) and ensures data consistency.
+
+### 6. Secure Payments
+- **Integration with third-party payment gateways** (e.g., Stripe, PayPal) using their secure APIs.
+- **Why it matters**: Ensures that financial data is not stored or mishandled by the application, reducing liability and risk.
+
+---
+
+These security practices are essential for:
+- 🔒 Protecting **user data** (emails, passwords, profile info)
+- 💳 Securing **payment operations**
+- 🏠 Safeguarding **property and booking details**
+- 🛡️ Preventing **unauthorized access** or service abuse
+
+---
+---
