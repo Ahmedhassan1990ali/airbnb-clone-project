@@ -93,7 +93,67 @@ Records of successful transactions.
 - `booking_id`: Foreign key referencing the booking
 - `amount`: Total payment amount
 - `payment_method`: e.g., credit card, PayPal
-- `status`: e.g., pending, completed, failed
+- `status`: e.g., pending, completed, faileds
 
 **Relationships**:
 - A payment belongs to one booking.
+
+
+## 🛠️ Features Breakdown
+
+### 1. API Documentation
+- **OpenAPI Standard**: The backend APIs are documented using the OpenAPI standard for clarity and ease of integration.
+- **Django REST Framework (DRF)**: Provides a comprehensive RESTful API for handling CRUD operations on users and properties.
+- **GraphQL Support**: Offers a flexible and efficient query mechanism as an alternative to REST.
+
+---
+
+### 2. User Authentication
+- **Endpoints**: `/users/`, `/users/{user_id}/`
+- **Features**:
+  - Register new users
+  - Authenticate existing users
+  - View and update user profiles
+
+---
+
+### 3. Property Management
+- **Endpoints**: `/properties/`, `/properties/{property_id}/`
+- **Features**:
+  - Create new property listings
+  - Update existing listings
+  - Retrieve and display property details
+  - Delete listings
+
+---
+
+### 4. Booking System
+- **Endpoints**: `/bookings/`, `/bookings/{booking_id}/`
+- **Features**:
+  - Make bookings for properties
+  - Update booking details (e.g. check-in/out dates)
+  - Cancel or view existing bookings
+
+---
+
+### 5. Payment Processing
+- **Endpoint**: `/payments/`
+- **Features**:
+  - Handle transactions related to bookings
+  - Integrate payment methods such as credit cards or PayPal
+  - Track payment status (e.g. pending, completed, failed)
+
+---
+
+### 6. Review System
+- **Endpoints**: `/reviews/`, `/reviews/{review_id}/`
+- **Features**:
+  - Post reviews on properties after a stay
+  - Edit or delete personal reviews
+  - Rate properties using a numeric score
+
+---
+
+### 7. Performance & Optimization
+- **Indexing**: Frequently queried fields are indexed for faster database access.
+- **Caching**: Implemented caching strategies to reduce database load and improve response time.
