@@ -1,4 +1,6 @@
-# **airbnb-clone-project**
+# **Airbnb clone project**
+![](https://drive.google.com/uc?export=view&id=101sJtlr2kZhDblKYOofUJlLQhgnkBc1k)
+
 
 ## **👥 Team Roles**
 
@@ -16,3 +18,5 @@
 - **Redis**: Used for caching and session management.
 - **Docker**: Containerization tool for consistent development and deployment environments.
 - **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
+
+## Database Design
