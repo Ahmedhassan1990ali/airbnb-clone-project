@@ -208,3 +208,30 @@ These security practices are essential for:
 
 ---
 ---
+## ⚙️ CI/CD Pipeline
+
+### What is CI/CD?
+**CI/CD (Continuous Integration and Continuous Deployment)** is a development practice that automates the process of building, testing, and deploying code. It ensures that changes to the codebase are integrated smoothly and delivered quickly, reliably, and safely.
+
+- **Continuous Integration (CI)**: Automatically tests and integrates new code when changes are pushed to the repository.
+- **Continuous Deployment (CD)**: Automatically deploys the tested code to a staging or production environment.
+
+---
+
+### Why CI/CD is Important
+- ✅ **Faster Development Cycles**: Automates repetitive steps, allowing developers to focus on building features.
+- 🧪 **Improved Code Quality**: Ensures all changes are tested automatically before merging or deployment.
+- 🚀 **Reliable Deployments**: Reduces human error by automating deployment steps.
+- 🔄 **Consistent Environments**: Helps maintain uniformity across dev, staging, and production environments.
+
+---
+
+### Tools Used for CI/CD
+- **GitHub Actions**: Automates workflows for testing, building, and deploying the application directly from GitHub.
+- **Docker**: Containerizes the application for consistent environment setup and easy deployment.
+- **Docker Hub / GitHub Container Registry**: Hosts container images used for deployment.
+- **Heroku / AWS / DigitalOcean (Optional)**: Deployment platforms that can integrate with CI/CD tools.
+
+---
+
+> By implementing a CI/CD pipeline, this project ensures smooth and secure delivery of new features and bug fixes with minimal downtime.
